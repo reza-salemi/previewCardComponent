@@ -1,0 +1,131 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: hsl(217, 54%, 11%);
+    height: 100vh;
+}
+
+article {
+    height: 60vh;
+    width: 750px;
+    color: hsl(215, 32%, 27%);
+    font-weight: 600;
+    background-color: hsl(216, 50%, 16%);
+    border-radius: 20px;
+
+}
+
+.cube {
+    display: block;
+    margin: 90px auto 30px auto;
+    border-radius: 10px;
+}
+
+h2, .text, .Ethereum-ico, .avatar {
+    margin-left: 80px;
+}
+
+.Ethereum-text {
+    color: hsl(178, 100%, 50%);
+}
+
+.clock-ico {
+    margin-left: 340px;
+}
+
+svg {
+    margin-top: 25px;
+}
+
+.clock-text {
+    color: hsl(215, 51%, 70%)
+}
+
+h2 {
+    color: hsl(0, 0%, 100%);
+}
+
+hr {
+    width: 77%;
+    margin-top: 40px;
+}
+
+.avatar {
+    border: 1px solid hsl(0, 0%, 100%);
+    border-radius: 50%;
+    margin-top: 40px;
+}
+
+.creator-section {
+    display: flex;
+    align-items: center;
+
+}
+
+.creator {
+    margin-left: 30px;
+    margin-top: 45px;
+}
+
+.creator span {
+    color: hsl(0, 0%, 100%);
+}
+
+@media screen and (min-width: 1440px) {
+    article {
+        height: 80vh;
+        width: 372px;
+        color: hsl(215, 32%, 27%);
+        font-weight: 600;
+        background-color: hsl(216, 50%, 16%);
+        border-radius: 20px;
+    }
+
+    .cube {
+        margin: 20px auto 0 auto;
+        border-radius: 10px;
+        width: 320px;
+        height: 290px;
+        object-fit: cover;
+    }
+
+    h2, .text, .Ethereum-ico, .avatar {
+        margin-left: 27px;
+    }
+
+    svg {
+        margin-top: 15px;
+    }
+
+    .clock-ico {
+        margin-left: 100px;
+    }
+
+    hr {
+        width: 82%;
+        margin-top: 20px;
+    }
+
+    .creator {
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+
+    .avatar {
+        height: 40px;
+        margin-top: 0;
+    }
+}
+
+
