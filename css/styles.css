@@ -32,6 +32,16 @@ article {
     border-radius: 10px;
 }
 
+.creator span:hover{
+    color: hsl(178, 100%, 50%);
+}
+.cube:hover{
+    background: blue;
+}
+h2:hover{
+    color: hsl(178, 100%, 50%);
+}
+
 h2, .text, .Ethereum-ico, .avatar {
     margin-left: 80px;
 }
