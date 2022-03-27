@@ -107,10 +107,6 @@ article {
   color: hsl(0, 0%, 100%);
 }
 
-.cube:hover {
-  opacity: 0.5;
-}
-
 .creator span:hover {
   color: hsl(178, 100%, 50%);
 }
