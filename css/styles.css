@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+
 *,
 *::before,
 *::after {
@@ -19,24 +21,22 @@ body {
 
 article {
   max-width: 25rem;
-  color: hsl(215, 32%, 27%);
   background-color: hsl(216, 50%, 16%);
   border-radius: 20px;
   padding: 1.5rem;
-  grid-template-columns: minmax(275px, 1440px);
 }
 
-.main-photo {
+.cube-image {
   position: relative;
 }
 
-.main-photo img {
+.cube-image img {
   width: 100%;
   max-width: 25rem;
   border-radius: 15px;
 }
 
-.main-photo::after {
+.cube-image::after {
   content: url(../images/icon-view.svg);
   background-color: hsla(178, 100%, 50%, 0.5);
   display: flex;
@@ -50,7 +50,7 @@ article {
   transition: all 0.2s ease-in-out;
 }
 
-.main-photo:hover::after {
+.cube-image:hover::after {
   opacity: 1;
   cursor: pointer;
 }
@@ -100,6 +100,7 @@ article {
 
 .creator {
   margin-top: 1.7rem;
+  color: hsl(215, 51%, 70%);
 }
 
 .creator span {
