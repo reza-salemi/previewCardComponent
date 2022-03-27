@@ -23,20 +23,36 @@ article {
   background-color: hsl(216, 50%, 16%);
   border-radius: 20px;
   padding: 1.5rem;
+  grid-template-columns: minmax(275px, 1440px);
 }
 
 .main-photo {
-  display: block;
+  position: relative;
+}
+
+.main-photo img {
   width: 100%;
   max-width: 25rem;
   border-radius: 15px;
 }
 
-.cube {
-  background-image: url(../images/image-equilibrium.jpg);
+.main-photo::after {
+  content: url(../images/icon-view.svg);
+  background-color: hsla(178, 100%, 50%, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border-radius: 15px;
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
+}
+
+.main-photo:hover::after {
   opacity: 1;
-  background-size: cover;
-  border-radius: 10px;
+  cursor: pointer;
 }
 
 .content h2 {
